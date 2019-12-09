@@ -1,0 +1,62 @@
+<div class="container my-5" id="report_page">
+    <h3 class="my-3 text-dark">Generar listado de estudiantes</h3>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-4">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_report_teacher" class="text-dark">Docente:</label>
+                                <select name="combo_report_teacher" id="combo_report_teacher" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="col-auto my-4">
+                                <button class="btn btn-primary btn-block" type="button" id="btn_filter_report" element="teachers"
+                                        route="teachers/reports/reports">
+                                    Filtrar
+                                    <i class="fas fa-search ml-3"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_subjects_report" class="text-dark">Materias:</label>
+                                <select name="combo_subjects_report" id="combo_subjects_report" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="col-auto my-4">
+                                <button class="btn btn-danger btn-block" type="button" id="btn_finalize_report" element="teachers"
+                                        route="teachers/reports/reports">
+                                    Terminar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-4">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_option_report" class="text-dark">Opción:</label>
+                                <select name="combo_option_report" id="combo_option_report" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-auto" id="list_report"></div>
+    </div>
+    <div class="row">
+        <div class="col-auto my-3" id="space_btn_excel"></div>
+    </div>
+</div>

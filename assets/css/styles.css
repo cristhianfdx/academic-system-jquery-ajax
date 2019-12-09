@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Condensed Bold";
+    src: url("../fonts/RobotoCondensed-Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{ font-family: "Roboto Regular";}
+
+/*Estilos para las validaciones de formularios*/
+input[aria-invalid="false"]{
+    color: #5bce3a !important;
+}
+
+input[aria-invalid="true"]{
+    color: #f7444e !important;
+}
+
+.error{
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+    color: #f7444e;
+    width: 100%;
+    font-size: 12px;
+}
+
+/*Estilos login*/
+.background-login{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#login_card{
+    border-radius: 5px;
+    background: #f4f4f4;  /* fallback for old browsers */
+    color: #616161;
+    width: 320px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 10px;
+    box-shadow: 0 10px 20px 10px rgba(0, 28, 56, 0.69) !important;
+}
+#login_card ::placeholder{ color: #BDBDBD; }
+
+#login_card input.form-control, .input-group-text{ border: 0; }
+
+
+#login_card input.form-control , .input-group-text{
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 0;
+}
+#login_card input.form-control{
+    background: transparent;
+    outline: none;
+    color: rgba(88, 88, 88, 0.76);
+}
+#login_card button{
+    border-radius: 5px;
+    padding: 10px;
+}
+.input-group-text{
+    background: #f4f4f4;
+    color: rgba(88, 88, 88, 0.76);
+    border-right: 1px solid transparent;
+}
+
+/*Estilos login----------------------*/
+
+
+/*Estilos barra de navegación*/
+
+.icons{
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.btn-icons{
+     font-size: 18px;
+     color: #ffffff;
+}
+
+.btn-icons-edit{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.logout:hover{ color: #f05d5d; }
+#user_account .icons:hover{ color: #33e654
+}
+
+.dropdown:hover .dropdown-menu{ display: block; }
+
+.user-icon{
+    font-size: 18px;
+    text-align: center;
+    color: #202041;
+}
+
+.dropdown-menu span{
+    text-align: center;
+    cursor: none;
+}
+.dropdown-toggle, .dropdown-toggle:hover{ color: transparent !important; }
+
+/*------Estilos barra de navegación*/
+
+/*Estilos vista Administrador*/
+/*--index--*/
+#nav, #lateral-menu{ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); font-family: "Roboto Condensed Bold" }
+
+.background-users{
+    background: #f8f7f4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f8f7f4, #dce3e4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f8f7f4, #dce3e4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#nav{ background: #0D47A1; }
+#card_content{ box-sizing: border-box; }
+
+#card-students, #card-teachers, #card-subjects{
+    width: 15rem;
+    margin: auto;
+    opacity: 0.90;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); !important;
+}
+
+.home-admin-item{ cursor: pointer; }
+
+#card-students:hover, #card-teachers:hover, #card-subjects:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 1 !important;
+}
+
+/*Estilos vista Administrador----------------------*/
+
+/*----Secciones----*/
+.list-group-item{
+    border-radius: 0;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+.menu-title{ background-color: #0253b3; color: #ffffff}
+
+table{background: #eceff1; border: 0}
+
+thead{background-color: #0253b3}
+
+
+
+

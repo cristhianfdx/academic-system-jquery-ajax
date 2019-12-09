@@ -1,0 +1,64 @@
+<div class="container my-5" id="asign_page">
+    <h3 class="my-3 text-dark">Asignación de materias</h3>
+
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <div class="col-auto">
+                            <label for="combo_teachers" class="text-dark">Docentes:</label>
+                            <select name="combo_teachers" id="combo_teachers" class="form-control mr-sm-3">
+                            </select>
+                        </div>
+                        <div class="col-auto my-4">
+                            <button class="btn btn-primary btn-block" type="button" id="btn_asign_subjects" element="teachers"
+                                    route="teachers/asign_subjects/asign">
+                                Confirmar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="col-auto">
+                            <label for="combo_subjects_asign" class="text-dark">Materias:</label>
+                                <select name="combo_subjects_asign" id="combo_subjects_asign" class="form-control mr-sm-3">
+                                </select>
+                        </div>
+                        <div class="col-auto my-4">
+                            <button class="btn btn-danger btn-block" id="btn_cancel_asign" type="button">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <span class="h6 text-success">Docente:</span>
+            <span id="teacher_selected" class="font-italic font-weight-bold"></span>
+            <ul class="list-group col-auto mt-3 mb-4" id="list_asign_subjects"></ul>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-auto">
+            <h3 class="my-4">Materias asignadas a cada docente</h3>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="text-light">
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col"> # Cédula</th>
+                        <th scope="col">Materias</th>
+                        <th scope="col">Eliminar una</th>
+                        <th scope="col">Eliminar todas</th>
+                    </tr>
+                    </thead>
+                    <tbody id="data_teachers_subjects"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+<div class="container my-5" id="inscribe_page">
+    <h3 class="my-3 text-dark">Inscripción de materias</h3>
+
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_students" class="text-secondary">Estudiante:</label>
+                                <select name="combo_students" id="combo_students" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="col-auto my-4">
+                                <button class="btn btn-primary btn-block" type="button" id="btn_inscribe"
+                                        element="students" route="students/inscribe_subjects/inscribe">
+                                    Confirmar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_subjects" class="text-secondary">Materias:</label>
+                                <select name="combo_subjects" id="combo_subjects" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="col-auto my-4">
+                                <button class="btn btn-danger btn-block" id="btn_cancel" type="button">Finalizar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <span class="h6 text-success">Estudiante:</span>
+            <span id="student_selected" class="font-italic font-weight-bold"></span>
+            <ul class="list-group col-auto mt-3 mb-4" id="list_subjects"></ul>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-auto">
+            <div class="view-admin">
+                <h3 class="my-4">Materias inscritas por estudiante</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-light">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col"># Cédula</th>
+                            <th scope="col">Materias</th>
+                            <th scope="col">Eliminar una</th>
+                            <th scope="col">Eliminar todas</th>
+                        </tr>
+                        </thead>
+                        <tbody id="data_students_subjects"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="view-student">
+                <h3 class="my-4">Materias inscritas por el estudiante</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-light">
+                        <tr>
+                            <th scope="col">Materia</th>
+                            <th scope="col">Docente</th>
+                        </tr>
+                        </thead>
+                        <tbody id="data_student_subjects"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

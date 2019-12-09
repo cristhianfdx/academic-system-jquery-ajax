@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 my-5" id="sidebar">
+            <div class="card border-0" id="lateral-menu">
+                <div class="card-header menu-title">
+                    <h3 class="text-center ">Menú</h3>
+                </div>
+                <div class="list-group">
+                    <a class="list-group-item list-group-item-action navigation active" data-toggle="list" href="javascript:void(0)"
+                            element="students">
+                        Listado
+                    </a>
+                    <a class="list-group-item list-group-item-action navigation" data-toggle="list" href="javascript:void(0)"
+                            route="students/inscribe_subjects/inscribe" element="students">
+                        Inscripción de materias
+                    </a>
+                    <a class="list-group-item list-group-item-action navigation" data-toggle="list" href="javascript:void(0)"
+                            route="students/notes_registered/registered" element="students">
+                        Notas registradas
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="subcontent" class="col-md-9">
+            <h3 class="my-5 text-dark">Estudiantes</h3>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="text-light">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th># Cédula</th>
+                        <th>Eliminar</th>
+                        <th>Editar</th>
+                    </tr>
+                    </thead>
+                    <tbody id="data_students"></tbody>
+                </table>
+            </div>
+
+            <button class="btn btn-secondary" type="button" id="create_new" data-toggle="modal"
+                    data-target="#formStudentModal">
+                Crear nuevo
+            </button>
+        </div>
+    </div>
+</div>

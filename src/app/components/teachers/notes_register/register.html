@@ -1,0 +1,126 @@
+<div class="container my-5" id="asign_page">
+    <h3 class="my-3">Registro de notas</h3>
+
+    <div class="row mt-5">
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-6">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_teachers_notes" class="text-dark">Docente:</label>
+                                <select name="combo_teachers_notes" id="combo_teachers_notes" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="col-auto my-4">
+                                <button class="btn btn-primary btn-block" type="button" id="btn_filter_subjects" element="teachers"
+                                        route="teachers/notes_register/register">
+                                    Filtrar
+                                    <i class="fas fa-search ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="">
+                            <div class="col-auto">
+                                <label for="combo_subjects_asign_notes" class="text-dark">Materias:</label>
+                                <select name="combo_subjects_asign_notes" id="combo_subjects_asign_notes" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="col-auto my-4">
+                                <button class="btn btn-danger btn-block" type="button" id="btn_finalize" element="teachers"
+                                        route="teachers/notes_register/register">
+                                    Terminar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="row">
+                <span class="h6 text-success ml-4">Docente:</span>
+                <span id="teacher_notes_selected" class="font-italic font-weight-bold ml-3"></span>
+            </div>
+            <div class="row">
+                <span class="h6 text-success ml-4">Materia:</span>
+                <span id="subject_notes_selected" class="font-italic font-weight-bold ml-3"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row my-4">
+        <form id="form_asign_notes" class="ml-3">
+            <div class="card ">
+                <div class="card-header bg-primary">
+                    <h3 class="text-center text-light" id="title_student">Estudiante</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <label for="name_student_note">Nombre:</label>
+                            <input type="text" name="name_student_note" class="form-control" id="name_student_note" placeholder="Nombre">
+                        </div>
+                        <div class="col">
+                            <label for="lastname_student_note">Apellido:</label>
+                            <input type="text" name="lastname_student_note" class="form-control" placeholder="Apellido" id="lastname_student_note">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="student_note1" class="mt-1">Nota 1:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" name="check_edit_note1" id="check_edit_note1" aria-label="Nota 1">
+                                    </div>
+                                </div>
+                                <input type="text" name="student_note1" class="form-control" id="student_note1" placeholder="Nota 1"
+                                        aria-label="Nota 1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="student_note2" class="mt-1">Nota 2:</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" name="check_edit_note2" id="check_edit_note2" aria-label="Nota 2">
+                                    </div>
+                                </div>
+                                <input type="text" name="student_note2" class="form-control" id="student_note2" placeholder="Nota 2"
+                                        aria-label="Nota 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary" id="left_btn" type="button">
+                                <i class="fas fa-angle-double-left"></i>
+                                Anterior
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-success" id="btn_save_note" type="submit"
+                                    data-toggle="popover" data-placement="bottom"
+                                    data-trigger="focus" data-content="Las notas han sido guardadas.">
+                                Guardar
+                                <i class="fas fa-save ml-2"></i>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary" id="right_btn" type="button">
+                                Siguiente
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="container my-5" id="registered_page">
+    <div class="view-admin">
+        <h3 class="my-3">Notas registradas por estudiante</h3>
+
+        <div class="row mt-5">
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-auto">
+                        <form>
+                            <div class="form-group">
+                                <label for="combo_subjects_notes" class="text-dark">Materias:</label>
+                                <select name="combo_subjects_notes" id="combo_subjects_notes" class="form-control mr-sm-3">
+                                </select>
+                            </div>
+                            <div class="form-group my-4">
+                                <button class="btn btn-primary" id="btn_search" type="button"
+                                        element="students" route="notes/registered">
+                                    Buscar
+                                    <i class="fas fa-search ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-auto">
+                <h3 class="my-4">Estudiantes</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-light">
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Apellido</th>
+                            <th scope="col">Número de Cédula</th>
+                            <th scope="col">Nota 1</th>
+                            <th scope="col">Nota 2</th>
+                            <th scope="col">Nota definitiva</th>
+                        </tr>
+                        </thead>
+                        <tbody id="data_students_notes"></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="view-student">
+        <div class="row my-4">
+            <div class="col-auto">
+                <h3 class="my-4">Notas registradas del estudiante</h3>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="text-light">
+                        <tr>
+                            <th scope="col">Materia</th>
+                            <th scope="col">Docente</th>
+                            <th scope="col">Nota 1</th>
+                            <th scope="col">Nota 2</th>
+                            <th scope="col">Nota definitiva</th>
+                        </tr>
+                        </thead>
+                        <tbody id="data_student_notes"></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
