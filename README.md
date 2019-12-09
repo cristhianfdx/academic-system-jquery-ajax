@@ -125,7 +125,7 @@ MateriaInscrita = {
 
 - Para la prueba de la aplicación de modo local se utilizo un servidor con Apache, para este caso se utilizó XAMPP.
  https://www.apachefriends.org/es/index.html
-- Si desea visualizar la aplicación en un ambiente productivo puede hacerlo en la siguiente dirección:  https://cristhianfdgz.github.io/Academic_System/
+- Si desea visualizar la aplicación en un ambiente productivo puede hacerlo en la siguiente dirección:  https://cristhianforerod.github.io/academic-system-jquery-ajax/
 
 ## Screenshots de la aplicación
 
